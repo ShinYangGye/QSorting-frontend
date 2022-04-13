@@ -14,6 +14,7 @@ const RegisterView = () => import('@/views/user/RegisterView.vue'); // 회원가
 // 연구관련 메뉴
 const MenuContentsLayout = () => import('@/viewsLayout/MenuContentsLayout.vue');  // 레이아웃
 const StudyListView = () => import('@/views/study/StudyListView.vue');            // 연구목록
+const StudyCreateView = () => import('@/views/study/StudyCreateView.vue');            // 연구생성
 const StudyDashBoardView = () => import('@/views/study/StudyDashBoardView.vue');  // 연구대시보드
 const StudyEditView = () => import('@/views/study/StudyEditView.vue');            // 연구수정
 const StudyItemsView = () => import('@/views/study/StudyItemsView.vue');          // 연구응답항목관리
@@ -79,6 +80,11 @@ const router = createRouter({
           path: '/study/list',
           name: 'study-list',    
           component: StudyListView
+        },
+        {
+          path: '/study/create',
+          name: 'study-create',    
+          component: StudyCreateView
         },
         {
           path: '/study/dashboard',

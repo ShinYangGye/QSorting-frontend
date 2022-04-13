@@ -60,4 +60,17 @@ watch(
   }
 }
 
+body {
+  font-size: 11pt;
+}
+
+.form-control, .btn {
+  font-size: 11pt;
+}
+
+
+.setting_guide_text {
+  font-style: italic;  
+}
+
 </style>
