@@ -1,7 +1,10 @@
 <script setup>
 import { ref } from '@vue/reactivity';
-import Datepicker from '@vuepic/vue-datepicker';
-import '@vuepic/vue-datepicker/dist/main.css'
+
+
+/* Datepicker 사용시
+// import Datepicker from '@vuepic/vue-datepicker';
+// import '@vuepic/vue-datepicker/dist/main.css'
 
 const currentDate = new Date();
 const nextDate = new Date();
@@ -35,6 +38,10 @@ const format = (date) => {
 
 	return `${year}/${month}/${day} ${hour}:${min}`;
 }
+// Datepicker 사용시
+*/
+
+
 
 </script>
 
@@ -49,11 +56,8 @@ const format = (date) => {
 				<input type="text" class="form-control" id="title">
 			</div>
 
-
+			<!-- Datepicker 사용시
 			<div class="row mb-3">
-
-				
-
 				<div class="col-md-6 position-relative">
 					<label for="validationTooltip01" class="form-label">시작일시</label>
 					<Datepicker v-model="dateFrom" locale="ko" :flow="flow" :format="formatFrom" />
@@ -63,6 +67,20 @@ const format = (date) => {
 					<Datepicker v-model="dateEnd" locale="ko" :flow="flow" :format="formatEnd" />
 				</div>
 			</div>
+			 // -->
+
+			<!-- Html datetime-local 사용 -->
+			<div class="row mb-3">
+				<div class="col-md-6 position-relative">
+					<label for="startAt" class="form-label">시작일시</label>
+					<input class="form-control" type="datetime-local" id="startAt" aria-label="default input example">
+				</div>
+				<div class="col-md-6 position-relative">
+					<label for="endAt" class="form-label">종료일시</label>
+					<input class="form-control" type="datetime-local" id="endAt" aria-label="default input example">
+				</div>
+			</div>		
+			<!-- //  -->	 
 
 			<div>
 				<label for="exampleFormControlTextarea1" class="form-label">연구에 대한 설명을 제공합니다(본인만 볼 수 있음).</label>
