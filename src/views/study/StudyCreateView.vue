@@ -4,16 +4,24 @@ import StudyDetailSetting from "../../components/study/create/StudyDetailSetting
 import StudyItems from "../../components/study/create/StudyItems.vue";
 import StudyGrid from "../../components/study/create/StudyGrid.vue";
 import StudyNext from "../../components/study/create/StudyNext.vue";
+import PageTitle from "../../components/common/PageTitle.vue";
+
+import { reactive } from '@vue/reactivity';
+import { provide } from '@vue/runtime-core';
+
+const pageData = reactive({
+	title: "연구추가",
+	path: "연구관리 / 연구추가",
+});
+
+provide('pageData', pageData);
 
 </script>
 
 
 <template>
-	<div class="mt-2">
-		<div class="d-flex justify-content-between mb-2">
-			<h4>연구생성</h4>
-			<span>연구생성 / 상세정보등록</span>
-		</div>
+	<PageTitle />
+	<div>
 		<div class="pb-5">
 			<!-- 헤더탭 -->
 			<StudyHeaderTab />

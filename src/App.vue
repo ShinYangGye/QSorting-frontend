@@ -45,8 +45,9 @@ watch(
   <router-view />
 </template>
 
-<style>
-@import '@/assets/docs.css';
+<style lang="scss">
+@import '@/assets/docs.scss';
+@import '@/assets/main.scss';
 
 .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
     margin-right: 0;
@@ -60,14 +61,11 @@ watch(
   }
 }
 
-body {
-  font-size: 11pt;
+body, .form-control, .btn  {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
 }
-
-.form-control, .btn {
-  font-size: 11pt;
-}
-
 
 .setting_guide_text {
   font-style: italic;  

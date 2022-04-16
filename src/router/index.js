@@ -28,8 +28,6 @@ const AccountMngView = () => import('../views/account/AccountMngView.vue'); // �
 const AccountEditView = () => import('@/views/account/AccountEditView.vue');  // 계정수정
 const PasswordEditView = () => import('@/views/account/PasswordEditView.vue'); // 비밀번호변경
 
-const BoardView = () => import('@/views/study/BoardView.vue'); // 테스트
-
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -137,12 +135,7 @@ const router = createRouter({
           path: '/account/password',
           name: 'account-password',    
           component: PasswordEditView
-        },
-        {
-          path: '/study/board',
-          name: 'study-board',    
-          component: BoardView
-        },
+        },      
 
       ]
     },

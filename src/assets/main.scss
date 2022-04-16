@@ -1,0 +1,16 @@
+$theme-colors: (
+  "primary":    #E56681,
+  "secondary":  #D8BFD8,
+  "success":    #00594C,
+  "info":       #FFA663,
+  "warning":    #4C002C,
+  "danger":     #DF3369,
+  "light":      #FFF6FC,
+  "dark":       #000000
+);
+
+.bd-navbar {
+	background-color: #BC548D;
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap";

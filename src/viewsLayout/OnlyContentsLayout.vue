@@ -17,8 +17,8 @@ import Footer from '@/components/common/Footer.vue';
 
 </template>
 
-<style>
-@import '@/assets/docs.css';
+<style lang="scss" scoped>
+/* @import '@/assets/docs.scss'; */
 
 @media (min-width: 768px) {
   .bd-layout {

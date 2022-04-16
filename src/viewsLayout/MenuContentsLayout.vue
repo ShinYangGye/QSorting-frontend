@@ -43,8 +43,8 @@ console.log(routeName);
 
 </template>
 
-<style scoped>
-@import '@/assets/docs.css';
+<style lang="scss">
+/* @import '@/assets/docs.scss'; */
 
 .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
     margin-right: 0;

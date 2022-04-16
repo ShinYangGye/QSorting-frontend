@@ -1,5 +1,5 @@
 <template>
-	<aside class="bd-sidebar mt-2">
+	<aside class="bd-sidebar m-0">
 		<nav class="collapse bd-links" id="bd-docs-nav" aria-label="Docs navigation">
 			
 			<ul class="list-unstyled mb-0 py-3 pt-md-1">
@@ -85,11 +85,7 @@
 									<i class="bi bi-check-square"></i><span class="mx-1">비밀번호 변경</span>
 								</router-link>
 							</li>
-							<li>
-								<router-link class="d-inline-flex align-items-center rounded" :to="{name: 'study-board'}">
-									<i class="bi bi-arrow-left-square"></i><span class="mx-1">테스트</span>
-								</router-link>
-							</li>
+						
 						</ul>
 					</div>
 				</li>
@@ -103,6 +99,7 @@
 </template>
 
 <style scoped>
+/*
 .bd-links .btn::before {
     width: 1.25em;
     line-height: 0;
@@ -110,4 +107,5 @@
     transition: transform 0.35s ease;
     transform-origin: 0.5em 50%;
 }
+*/
 </style>

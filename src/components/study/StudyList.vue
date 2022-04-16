@@ -10,14 +10,8 @@ const router = useRouter();
 
 <template>
 
-	<div class="mt-2">
-		<div class="d-flex justify-content-between mb-2">
-			<h4>연구목록</h4>
-			<span>연구관리 / 연구목록</span>
-		</div>
-
+	<div>
 		<button type="button" class="btn btn-primary mb-2" @click="router.push({name: 'study-create'})">연구생성 + </button>
-
 		<table class="table">
 			<thead>
 				<tr>
